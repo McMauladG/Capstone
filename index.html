@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Assessment System</title>
+  <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+          }
+
+          body, html {
+            height: 100%;
+            background: url("Admin Office.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+
+          .container {
+            text-align: center;
+            color: #fff;
+            animation: fadeIn 2s ease-in;
+          }
+
+          h1 {
+            font-size: 6.0em;
+            margin-bottom: 20px;
+            margin-top: 150px;
+            animation: slideDown 1.5s ease-in-out;
+            text-shadow: 4px 5px 5px black;
+          }
+
+          p {
+            font-size: 2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeIn 2s 1s forwards;
+            font-weight: 800;
+            text-shadow: 4px 5px 5px black;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 2s 1.5s forwards;
+          }
+
+          .btn {
+            padding: 15px 30px;
+            border: none;
+            background: lightblue;
+            color: blue;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+          }
+
+          @keyframes fadeInUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+          
+          img {
+            width: 100px;
+            margin-top: 10rem;
+          }
+
+          img:hover {
+            transform: scale(1.35);
+          }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+      <h1>Capstone Project<br>"Coding Assessment System"</h1>
+      <p>Sulu State University</p>
+
+      <div class="buttons">
+        <button class="btn" onclick="location.href='user_manual.pdf'">User Guide</button>
+        <button class="btn" onclick="location.href='front_page.pdf'">Table of Contents</button>
+        <button class="btn" onclick="location.href='capstone.pdf'">Thesis Project</button>
+      </div>
+  </div>
+
+</body>
+</html>
